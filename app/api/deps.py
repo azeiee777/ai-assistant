@@ -1,0 +1,1 @@
+from app.api.routes.query import router as query_router
