@@ -26,3 +26,22 @@ Question:
 {question}
 """
 )
+
+
+INTENT_PROMPT = ChatPromptTemplate.from_template(
+    """
+You are an intent classification assistant.
+
+Classify the user's input into EXACTLY ONE of the following categories:
+
+- greeting: greetings or polite openers (e.g., "hi", "hello", "hey")
+- how_are_you: expressions asking about the assistant’s well-being (e.g., "how are you", "Hi, how are you", "how are you doing")
+- invalid: empty input, meaningless text, symbols only, or noise (e.g., ".....", "???", whitespace)
+- question: a valid informational or task-oriented question
+
+Return ONLY the category name.
+
+User input:
+{input}
+"""
+)

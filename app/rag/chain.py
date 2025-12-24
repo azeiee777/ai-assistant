@@ -5,6 +5,7 @@ from app.services.vectorstore import load_vectorstore
 from app.services.llm import get_llm
 from app.rag.retriever import get_retriever
 from app.core.prompts import QA_PROMPT
+from app.core.prompts import INTENT_PROMPT
 
 
 def run_rag(question: str) -> Tuple[str, List[Document]]:
@@ -28,3 +29,11 @@ def run_rag(question: str) -> Tuple[str, List[Document]]:
     )
 
     return response.content, docs
+
+
+def detect_intent_llm(user_input: str) -> str:
+    llm = get_llm()
+    response = llm.invoke(
+        INTENT_PROMPT.format(input=user_input)
+    )
+    return response.content.strip().lower()
