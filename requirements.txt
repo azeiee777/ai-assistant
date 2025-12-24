@@ -18,5 +18,5 @@ typing-extensions==4.11.0
 pypdf==4.2.0
 
 # --- Vector store ---
-faiss-cpu==1.8.0.post1
+faiss-cpu==1.10.0
 
