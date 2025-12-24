@@ -19,3 +19,6 @@ pydantic==1.10.14
 python-dotenv==1.0.1
 tiktoken==0.7.0
 typing-extensions==4.11.0
+
+pypdf==4.2.0
+
