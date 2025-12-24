@@ -1,22 +1,46 @@
-# --- Web framework ---
-fastapi==0.110.3
-uvicorn[standard]==0.29.0
+# # --- Web framework ---
+# fastapi==0.110.3
+# uvicorn[standard]==0.29.0
 
-# --- LangChain core (Python 3.8 safe) ---
-langchain==0.2.16
-langchain-core==0.2.38
-langchain-community==0.2.16
-langchain-openai==0.1.20
-openai==1.37.0
+# # --- LangChain core (Python 3.8 safe) ---
+# langchain==0.2.16
+# langchain-core==0.2.38
+# langchain-community==0.2.16
+# langchain-openai==0.1.20
+# openai==1.37.0
+# httpx==0.27.0
+
+# # --- Utilities ---
+# pydantic==1.10.14
+# python-dotenv==1.0.1
+# tiktoken==0.7.0
+# typing-extensions==4.11.0
+# pypdf==4.2.0
+
+# # --- Vector store ---
+# faiss-cpu==1.10.0
+
+
+# --- Web framework ---
+fastapi==0.95.2
+uvicorn[standard]==0.23.2
+
+# --- LangChain (Python 3.8 compatible) ---
+langchain==0.0.352
+langchain-community==0.0.20
+langchain-openai==0.0.8
+
+# --- OpenAI ---
+openai==0.28.1
 httpx==0.27.0
+tiktoken==0.7.0
 
 # --- Utilities ---
 pydantic==1.10.14
 python-dotenv==1.0.1
-tiktoken==0.7.0
 typing-extensions==4.11.0
 pypdf==4.2.0
 
 # --- Vector store ---
-faiss-cpu==1.10.0
+faiss-cpu==1.7.4
 
